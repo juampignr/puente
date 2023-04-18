@@ -1,14 +1,11 @@
 
 import { Text, View, StyleSheet } from 'react-native';
-import Mapbox from '@rnmapbox/maps';
 
-Mapbox.setAccessToken('pk.eyJ1IjoianBiZWhsZXIiLCJhIjoiY2xnZ21hZTlkMGQwOTNlbzI3OGFpcGNibSJ9.GFbUH1k2Rw_wVTVGVaJcCw');
 
 export default function Home({ navigation }) {
     return (
         <View style={styles.page}>
         <View style={styles.container}>
-          <Mapbox.MapView style={styles.map} />
         </View>
       </View>
     );
