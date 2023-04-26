@@ -15,14 +15,14 @@ export default function BackButton({children}) {
 
     return(
         <Pressable style={buttonStyles} onLongPress={()=>false} onPressOut={()=>{setStyles()}}>
-            <FontAwesomeIcon style={fontStyles} icon="fa-user" size={50}/>
+            <FontAwesomeIcon style={fontStyles} icon="fa-user" size={40}/>
         </Pressable>
     )
 }
 
 const styles = StyleSheet.create({
     font: {
-        color: "#646464",
+        color: "#8c8c5a",
         transform: [
             { rotate: "-45deg" },
         ]
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         margin: 20,
         backgroundColor: "#fcfc9d",
         borderRadius: 15,
-        borderColor: "#646464",
+        borderColor: "#c3c37e",
         borderWidth: 3,
         transform: [
         { rotate: "45deg" },
